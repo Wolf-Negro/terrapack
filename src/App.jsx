@@ -3,25 +3,22 @@ import React from 'react';
 function App() {
   // CONFIGURATION - FEELS EASY TO EDIT
   const CONFIG = {
-    title: "Roll And Roll Lince",
-    handle: "@rollandrolllince",
-    slogan: "Ese gusto que sí vale la pena",
-    whatsappNumber: "51966755312",
-    whatsappMessage: "Hola Roll And Roll! Quisiera hacer un pedido.",
-    menuLink: "https://drive.google.com/file/d/1X-V5Tw5S3wv7uq2QbOD3vRLRa69YRfaU/preview",
-    address: "Av. José Leal 998, Lince", // EDIT HERE
-    googleMapsSearch: "https://www.google.com/maps/search/?api=1&query=Roll+And+Roll+Lince",
-    footerTitle: "DELIVERY Y TIENDA",
-    footerText: "Abiertos todos los días, tarde y noche."
+    title: "Terrapack Peru",
+    handle: "@terrapackperu",
+    slogan: "Tu marca en todas partes",
+    whatsappNumber: "51968201059",
+    catalogLink: "https://terrapackperu.pe/",
+    footerTitle: "EMPAQUES BIODEGRADABLES",
+    footerText: "Sostenibilidad para tu marca."
   };
 
-  const waLink = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+  const waLink = (message) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="container">
       <header className="profile">
         <div className="logo-container">
-          <img src="/logo-rollandroll.png" alt="Roll And Roll Logo" className="logo-img" />
+          <img src="/logo-rollandroll.png" alt="Terrapack Peru Logo" className="logo-img" />
         </div>
         <h1 className="brand-title">{CONFIG.title}</h1>
         <div className="handle">{CONFIG.handle}</div>
@@ -30,43 +27,53 @@ function App() {
 
       <main className="links-section">
         <a
-          href={CONFIG.menuLink}
+          href={waLink("Hola Terrapack! Me gustaría una cotización de vasos para bebidas frías.")}
           target="_blank"
           rel="noopener noreferrer"
           className="link-block"
-          style={{ backgroundImage: 'url("/bg-menu.png?v=2")' }}
+          style={{ backgroundImage: 'url("/Bebidas%20Frias.png")' }}
         >
           <div className="overlay"></div>
-          <span className="link-text">Ver carta</span>
+          <span className="link-text">Cotización Bebidas Frías</span>
         </a>
 
         <a
-          href={waLink}
+          href={waLink("Hola Terrapack! Me gustaría una cotización de vasos para bebidas calientes.")}
           target="_blank"
           rel="noopener noreferrer"
           className="link-block"
-          style={{ backgroundImage: 'url("/bg-whatsapp.png?v=2")' }}
+          style={{ backgroundImage: 'url("/Bebidas%20Calientes.png")' }}
         >
           <div className="overlay"></div>
-          <span className="link-text">Pedir por WhatsApp</span>
+          <span className="link-text">Cotización Bebidas Calientes</span>
         </a>
 
         <a
-          href={CONFIG.googleMapsSearch}
+          href={waLink("Hola Terrapack! Me gustaría una cotización de vasos para bebidas frías y calientes.")}
           target="_blank"
           rel="noopener noreferrer"
           className="link-block"
-          style={{ backgroundImage: 'url("/bg-location.png?v=2")' }}
+          style={{ backgroundImage: 'url("/Bebidas%20Ambos.png")' }}
         >
           <div className="overlay"></div>
-          <span className="link-text">Cómo llegar</span>
+          <span className="link-text">Cotización de Ambos</span>
+        </a>
+
+        <a
+          href={CONFIG.catalogLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-block"
+          style={{ backgroundImage: 'url("/catalogo%20mokup.png")' }}
+        >
+          <div className="overlay"></div>
+          <span className="link-text">Ver Catálogo</span>
         </a>
       </main>
 
       <footer className="footer-info">
         <div className="footer-title">{CONFIG.footerTitle}</div>
         <div className="footer-text">{CONFIG.footerText}</div>
-        <div className="address-edit">{CONFIG.address}</div>
       </footer>
     </div>
   );

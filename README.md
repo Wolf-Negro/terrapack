@@ -1,16 +1,47 @@
-# React + Vite
+# Terrapack Peru - Link in Bio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web estilo "Link in Bio" para **Terrapack Peru**, enfocado en la cotización de empaques biodegradables (vasos para bebidas frías y calientes).
 
-Currently, two official plugins are available:
+## 🚀 Características
+- **Diseño Premium**: Estética minimalista y eco-friendly alineada a la marca.
+- **Cotización Directa**: Botones con mensajes pre-configurados para WhatsApp.
+- **Catálogo Integrado**: Acceso directo al catálogo web oficial.
+- **Mobile First**: Optimizado para visualización en dispositivos móviles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías
+- **React 18**
+- **Vite 5**
+- **Vanilla CSS** (Custom Design System)
 
-## React Compiler
+## 📦 Instalación y Uso Local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/terrapack-link-bio.git
+   ```
 
-## Expanding the ESLint configuration
+2. Entra al directorio:
+   ```bash
+   cd terrapack-link-bio
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+4. Corre el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Despliegue (Build)
+
+Para generar la versión de producción:
+```bash
+npm run build
+```
+Los archivos optimizados se generarán en la carpeta `/dist`.
+
+## 📄 Licencia
+Este proyecto es privado y los derechos de marca pertenecen a [Terrapack Peru](https://terrapackperu.pe/).
